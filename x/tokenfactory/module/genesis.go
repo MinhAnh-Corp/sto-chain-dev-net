@@ -3,8 +3,8 @@ package tokenfactory
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"stocchain/x/tokenfactory/keeper"
-	"stocchain/x/tokenfactory/types"
+	"stochain/x/tokenfactory/keeper"
+	"stochain/x/tokenfactory/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

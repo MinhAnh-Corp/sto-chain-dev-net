@@ -1,7 +1,7 @@
 syntax = "proto3";
 package stochain.tokenfactory;
 
-option go_package = "stocchain/x/tokenfactory/types";
+option go_package = "stochain/x/tokenfactory/types";
 
 message Denom {
   string denom = 1; 

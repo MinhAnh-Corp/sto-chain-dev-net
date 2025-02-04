@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "stocchain/testutil/keeper"
-	"stocchain/x/tokenfactory/keeper"
-	"stocchain/x/tokenfactory/types"
+	keepertest "stochain/testutil/keeper"
+	"stochain/x/tokenfactory/keeper"
+	"stochain/x/tokenfactory/types"
 )
 
 func setupMsgServer(t testing.TB) (keeper.Keeper, types.MsgServer, context.Context) {

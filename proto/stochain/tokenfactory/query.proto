@@ -9,24 +9,24 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 import "stochain/tokenfactory/params.proto";
 import "stochain/tokenfactory/denom.proto";
 
-option go_package = "stocchain/x/tokenfactory/types";
+option go_package = "stochain/x/tokenfactory/types";
 
 // Query defines the gRPC querier service.
 service Query {
   
   // Parameters queries the parameters of the module.
   rpc Params (QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/stocchain/tokenfactory/params";
+    option (google.api.http).get = "/stochain/tokenfactory/params";
   
   }
   
   // Queries a list of Denom items.
   rpc Denom    (QueryGetDenomRequest) returns (QueryGetDenomResponse) {
-    option (google.api.http).get = "/stocchain/tokenfactory/denom/{denom}";
+    option (google.api.http).get = "/stochain/tokenfactory/denom/{denom}";
   
   }
   rpc DenomAll (QueryAllDenomRequest) returns (QueryAllDenomResponse) {
-    option (google.api.http).get = "/stocchain/tokenfactory/denom";
+    option (google.api.http).get = "/stochain/tokenfactory/denom";
   
   }
 }

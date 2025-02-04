@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"stocchain/x/tokenfactory/types"
+	"stochain/x/tokenfactory/types"
 )
 
 type msgServer struct {

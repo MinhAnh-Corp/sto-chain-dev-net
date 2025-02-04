@@ -7,7 +7,7 @@ version: v1
 managed:
   enabled: true
   go_package_prefix:
-    default: stocchain/api
+    default: stochain/api
     except:
       - buf.build/googleapis/googleapis
       - buf.build/cosmos/gogo-proto

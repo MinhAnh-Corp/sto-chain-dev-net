@@ -8,9 +8,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"stocchain/testutil/sample"
-	tokenfactorysimulation "stocchain/x/tokenfactory/simulation"
-	"stocchain/x/tokenfactory/types"
+	"stochain/testutil/sample"
+	tokenfactorysimulation "stochain/x/tokenfactory/simulation"
+	"stochain/x/tokenfactory/types"
 )
 
 // avoid unused import issue

@@ -75,10 +75,10 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
-	tokenfactorymodulekeeper "stocchain/x/tokenfactory/keeper"
+	tokenfactorymodulekeeper "stochain/x/tokenfactory/keeper"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
-	"stocchain/docs"
+	"stochain/docs"
 )
 
 const (

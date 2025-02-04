@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"stocchain/x/tokenfactory/types"
+	"stochain/x/tokenfactory/types"
 
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
