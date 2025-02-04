@@ -17,8 +17,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 
-	"STOChain/x/tokenfactory/keeper"
-	"STOChain/x/tokenfactory/types"
+	"stocchain/x/tokenfactory/keeper"
+	"stocchain/x/tokenfactory/types"
 )
 
 func TokenfactoryKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {

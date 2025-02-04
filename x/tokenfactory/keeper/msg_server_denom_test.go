@@ -7,9 +7,9 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/stretchr/testify/require"
 
-	keepertest "STOChain/testutil/keeper"
-	"STOChain/x/tokenfactory/keeper"
-	"STOChain/x/tokenfactory/types"
+	keepertest "stocchain/testutil/keeper"
+	"stocchain/x/tokenfactory/keeper"
+	"stocchain/x/tokenfactory/types"
 )
 
 // Prevent strconv unused error

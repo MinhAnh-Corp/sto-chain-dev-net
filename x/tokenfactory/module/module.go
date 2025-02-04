@@ -20,9 +20,9 @@ import (
 
 	// this line is used by starport scaffolding # 1
 
-	modulev1 "STOChain/api/stochain/tokenfactory/module"
-	"STOChain/x/tokenfactory/keeper"
-	"STOChain/x/tokenfactory/types"
+	modulev1 "stocchain/api/stochain/tokenfactory/module"
+	"stocchain/x/tokenfactory/keeper"
+	"stocchain/x/tokenfactory/types"
 )
 
 var (

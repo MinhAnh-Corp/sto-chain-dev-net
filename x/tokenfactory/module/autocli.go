@@ -3,7 +3,7 @@ package tokenfactory
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	modulev1 "STOChain/api/stochain/tokenfactory"
+	modulev1 "stocchain/api/stochain/tokenfactory"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

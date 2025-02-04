@@ -7,8 +7,8 @@ import (
 	clienthelpers "cosmossdk.io/client/v2/helpers"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"STOChain/app"
-	"STOChain/cmd/stochaind/cmd"
+	"stocchain/app"
+	"stocchain/cmd/stochaind/cmd"
 )
 
 func main() {

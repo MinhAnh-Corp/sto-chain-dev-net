@@ -4,8 +4,8 @@ import (
 	"math/rand"
 	"strconv"
 
-	"STOChain/x/tokenfactory/keeper"
-	"STOChain/x/tokenfactory/types"
+	"stocchain/x/tokenfactory/keeper"
+	"stocchain/x/tokenfactory/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"

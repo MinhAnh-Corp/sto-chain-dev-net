@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"STOChain/x/tokenfactory/types"
+	"stocchain/x/tokenfactory/types"
 )
 
 func TestMsgUpdateParams(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	keepertest "STOChain/testutil/keeper"
-	"STOChain/testutil/nullify"
-	"STOChain/x/tokenfactory/types"
+	keepertest "stocchain/testutil/keeper"
+	"stocchain/testutil/nullify"
+	"stocchain/x/tokenfactory/types"
 )
 
 // Prevent strconv unused error

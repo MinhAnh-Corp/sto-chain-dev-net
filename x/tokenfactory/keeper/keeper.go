@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"STOChain/x/tokenfactory/types"
+	"stocchain/x/tokenfactory/types"
 )
 
 type (

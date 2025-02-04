@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"STOChain/x/tokenfactory/types"
+	"stocchain/x/tokenfactory/types"
 
 	"cosmossdk.io/store/prefix"
 	"github.com/cosmos/cosmos-sdk/runtime"

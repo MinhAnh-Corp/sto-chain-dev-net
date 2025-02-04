@@ -38,9 +38,9 @@ After a draft release is created, make your final changes from the release page 
 To install the latest version of your blockchain node's binary, execute the following command on your machine:
 
 ```
-curl https://get.ignite.com/username/STOChain@latest! | sudo bash
+curl https://get.ignite.com/username/stochain@latest! | sudo bash
 ```
-`username/STOChain` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
+`username/stochain` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
 
 ## Learn more
 

@@ -3,10 +3,10 @@ package tokenfactory_test
 import (
 	"testing"
 
-	keepertest "STOChain/testutil/keeper"
-	"STOChain/testutil/nullify"
-	tokenfactory "STOChain/x/tokenfactory/module"
-	"STOChain/x/tokenfactory/types"
+	keepertest "stocchain/testutil/keeper"
+	"stocchain/testutil/nullify"
+	tokenfactory "stocchain/x/tokenfactory/module"
+	"stocchain/x/tokenfactory/types"
 
 	"github.com/stretchr/testify/require"
 )
