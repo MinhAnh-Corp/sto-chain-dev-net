@@ -1,28 +1,47 @@
 version: 1
+build:
+  binary: "stochaind"
 validation: sovereign
-accounts: 
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "ustoc"
+accounts:
+  # Total supply allocation: 10,000,000,000 ustoc
+  # The following numbers are set as:
+  #   admin: 9,000,000,000 ustoc
+  #   alice: 500,000,000 ustoc
+  #   bob: 490,000,000 ustoc
+  # And the faucet account (bob) receives an additional 10,000,000 ustoc,
+  # resulting in a final total supply of 10,000,000,000 ustoc.
+- name: admin
+  coins:
+    - 9000000000ustoc      # 9,000,000,000 STOC
 - name: alice
   coins:
-  - 20000token
-  - 200000000stake
+    - 500000000ustoc       # 500,000,000 STOC
 - name: bob
   coins:
-  - 10000token
-  - 100000000stake
+    - 490000000ustoc       # 490,000,000 STOC
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
+  # The faucet uses bob's account, providing an additional 10,000,000 ustoc.
   name: bob
   coins:
-  - 5token
-  - 100000stake
+    - 10000000ustoc        # 10,000,000 STOC
 validators:
+  # Validator bonding amounts are specified below.
+  # Note: In many setups, the tokens used for staking are deducted
+  # from the respective account balances (e.g., alice), so the overall
+  # initial total supply remains consistent.
 - name: alice
-  bonded: 100000000stake
+  bonded: 100000000ustoc   # 100,000,000 STOC
 - name: validator1
-  bonded: 100000000stake
+  bonded: 100000000ustoc   # 100,000,000 STOC
 - name: validator2
-  bonded: 200000000stake
+  bonded: 200000000ustoc   # 200,000,000 STOC
 - name: validator3
-  bonded: 300000000stake
+  bonded: 300000000ustoc   # 300,000,000 STOC

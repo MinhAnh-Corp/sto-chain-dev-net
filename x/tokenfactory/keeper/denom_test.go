@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"testing"
 
-	keepertest "STOChain/testutil/keeper"
-	"STOChain/testutil/nullify"
-	"STOChain/x/tokenfactory/keeper"
-	"STOChain/x/tokenfactory/types"
+	keepertest "stochain/testutil/keeper"
+	"stochain/testutil/nullify"
+	"stochain/x/tokenfactory/keeper"
+	"stochain/x/tokenfactory/types"
 
 	"github.com/stretchr/testify/require"
 )

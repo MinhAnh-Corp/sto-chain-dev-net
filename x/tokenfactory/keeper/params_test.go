@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "STOChain/testutil/keeper"
-	"STOChain/x/tokenfactory/types"
+	keepertest "stochain/testutil/keeper"
+	"stochain/x/tokenfactory/types"
 )
 
 func TestGetParams(t *testing.T) {

@@ -32,11 +32,11 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"STOChain/app"
+	"stochain/app"
 )
 
 const (
-	SimAppChainID = "STOChain-simapp"
+	SimAppChainID = "stochain-simapp"
 )
 
 var FlagEnableStreamingValue bool

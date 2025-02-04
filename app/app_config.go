@@ -3,9 +3,9 @@ package app
 import (
 	"time"
 
-	tokenfactorymodulev1 "STOChain/api/stochain/tokenfactory/module"
-	_ "STOChain/x/tokenfactory/module" // import for side-effects
-	tokenfactorymoduletypes "STOChain/x/tokenfactory/types"
+	tokenfactorymodulev1 "stochain/api/stochain/tokenfactory/module"
+	_ "stochain/x/tokenfactory/module" // import for side-effects
+	tokenfactorymoduletypes "stochain/x/tokenfactory/types"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
 	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"

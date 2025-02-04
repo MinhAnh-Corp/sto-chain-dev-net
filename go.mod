@@ -1,4 +1,4 @@
-module STOChain
+module stochain
 
 go 1.22.7
 

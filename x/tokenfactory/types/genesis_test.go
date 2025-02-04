@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"STOChain/x/tokenfactory/types"
+	"stochain/x/tokenfactory/types"
 
 	"github.com/stretchr/testify/require"
 )

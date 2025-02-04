@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/runtime"
 
-	"STOChain/x/tokenfactory/types"
+	"stochain/x/tokenfactory/types"
 )
 
 // GetParams get all parameters as types.Params
