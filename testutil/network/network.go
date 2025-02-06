@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	"github.com/stretchr/testify/require"
 
-	"stochain/app"
+	"stoc/app"
 )
 
 type (

@@ -3,10 +3,6 @@ package app
 import (
 	"time"
 
-	tokenfactorymodulev1 "stochain/api/stochain/tokenfactory/module"
-	_ "stochain/x/tokenfactory/module" // import for side-effects
-	tokenfactorymoduletypes "stochain/x/tokenfactory/types"
-
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
 	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
 	authmodulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
@@ -56,6 +52,10 @@ import (
 	ibctransfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	"google.golang.org/protobuf/types/known/durationpb"
+
+	stocmodulev1 "stoc/api/stoc/stoc/module"
+	_ "stoc/x/stoc/module" // import for side-effects
+	stocmoduletypes "stoc/x/stoc/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 
@@ -93,7 +93,7 @@ var (
 		consensustypes.ModuleName,
 		circuittypes.ModuleName,
 		// chain modules
-		tokenfactorymoduletypes.ModuleName,
+		stocmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	}
 
@@ -118,7 +118,7 @@ var (
 		icatypes.ModuleName,
 		ibcfeetypes.ModuleName,
 		// chain modules
-		tokenfactorymoduletypes.ModuleName,
+		stocmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/beginBlockers
 	}
 
@@ -137,7 +137,7 @@ var (
 		icatypes.ModuleName,
 		ibcfeetypes.ModuleName,
 		// chain modules
-		tokenfactorymoduletypes.ModuleName,
+		stocmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/endBlockers
 	}
 
@@ -158,7 +158,6 @@ var (
 		{Account: ibctransfertypes.ModuleName, Permissions: []string{authtypes.Minter, authtypes.Burner}},
 		{Account: ibcfeetypes.ModuleName},
 		{Account: icatypes.ModuleName},
-		{Account: tokenfactorymoduletypes.ModuleName, Permissions: []string{authtypes.Minter, authtypes.Burner, authtypes.Staking}},
 		// this line is used by starport scaffolding # stargate/app/maccPerms
 	}
 
@@ -295,8 +294,8 @@ var (
 				Config: appconfig.WrapAny(&circuitmodulev1.Module{}),
 			},
 			{
-				Name:   tokenfactorymoduletypes.ModuleName,
-				Config: appconfig.WrapAny(&tokenfactorymodulev1.Module{}),
+				Name:   stocmoduletypes.ModuleName,
+				Config: appconfig.WrapAny(&stocmodulev1.Module{}),
 			},
 			// this line is used by starport scaffolding # stargate/app/moduleConfig
 		},

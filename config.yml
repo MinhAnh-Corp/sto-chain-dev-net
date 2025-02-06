@@ -1,47 +1,40 @@
+validation: sovereign
 version: 1
 build:
-  binary: "stochaind"
-validation: sovereign
-genesis:
-  app_state:
-    staking:
-      params:
-        bond_denom: "ustoc"
+  binary: stocd
+  proto:
+    path: ""
 accounts:
-  # Total supply allocation: 10,000,000,000 ustoc
-  # The following numbers are set as:
-  #   admin: 9,000,000,000 ustoc
-  #   alice: 500,000,000 ustoc
-  #   bob: 490,000,000 ustoc
-  # And the faucet account (bob) receives an additional 10,000,000 ustoc,
-  # resulting in a final total supply of 10,000,000,000 ustoc.
 - name: admin
   coins:
-    - 9000000000ustoc      # 9,000,000,000 STOC
-- name: alice
+  - 9000000000ustoc
+  mnemonic: hotel deal eagle vast sight treat caught away hidden turkey require crunch beef shield patient blouse marble border awkward enemy uncover canal chicken autumn
+- name: dev1
   coins:
-    - 500000000ustoc       # 500,000,000 STOC
-- name: bob
+  - 500000000ustoc
+  mnemonic: unfair pave wet local syrup mention east arctic tribe evil butter diagram into skill pet divert silk intact absurd save furnace raven very fabric
+- name: dev2
   coins:
-    - 490000000ustoc       # 490,000,000 STOC
-client:
+  - 490000000ustoc
+  mnemonic: radio post taxi federal win receive sign embrace junk street adapt when practice scrap pen broken donkey gown crew brisk twin record pelican large
+faucet:
+  name: dev1
+  coins:
+  - 10000000ustoc
+  mnemonic: survey torch diagram asset degree iron diagram torch trophy setup flush
   openapi:
     path: docs/static/openapi.yml
-faucet:
-  # The faucet uses bob's account, providing an additional 10,000,000 ustoc.
-  name: bob
-  coins:
-    - 10000000ustoc        # 10,000,000 STOC
+genesis:
+  app_state:
+    crisis:
+      constant_fee:
+        denom: ustoc
+    staking:
+      params:
+        bond_denom: ustoc
 validators:
-  # Validator bonding amounts are specified below.
-  # Note: In many setups, the tokens used for staking are deducted
-  # from the respective account balances (e.g., alice), so the overall
-  # initial total supply remains consistent.
-- name: alice
-  bonded: 100000000ustoc   # 100,000,000 STOC
-- name: validator1
-  bonded: 100000000ustoc   # 100,000,000 STOC
-- name: validator2
-  bonded: 200000000ustoc   # 200,000,000 STOC
-- name: validator3
-  bonded: 300000000ustoc   # 300,000,000 STOC
+- name: dev2
+  bonded: 80000000ustoc
+  app:
+    minimum-gas-prices: 0.0001ustoc
+
