@@ -7,20 +7,29 @@ build:
 accounts:
 - name: admin
   coins:
-  - 9000000000ustoc
+  - 5000000000000ustoc
   mnemonic: hotel deal eagle vast sight treat caught away hidden turkey require crunch beef shield patient blouse marble border awkward enemy uncover canal chicken autumn
 - name: dev1
   coins:
-  - 500000000ustoc
+  - 2000000000000ustoc
   mnemonic: unfair pave wet local syrup mention east arctic tribe evil butter diagram into skill pet divert silk intact absurd save furnace raven very fabric
 - name: dev2
   coins:
-  - 490000000ustoc
+  - 2000000000000ustoc
   mnemonic: radio post taxi federal win receive sign embrace junk street adapt when practice scrap pen broken donkey gown crew brisk twin record pelican large
+- name: validator1
+  coins:
+  - 450000000000ustoc
+  mnemonic: torch survey diagram asset degree iron diagram torch setup flush host guard dice rigid torch trophy setup flush host guard dice rigid torch
+- name: validator2
+  coins:
+  - 450000000000ustoc
+  mnemonic: palace census kidney reason code artefact party code desert figure salt mobile pen broken donkey gown crew brisk twin record pelican large
+
 faucet:
   name: dev1
   coins:
-  - 10000000ustoc
+  - 100000000000ustoc
   mnemonic: survey torch diagram asset degree iron diagram torch trophy setup flush
   openapi:
     path: docs/static/openapi.yml
@@ -33,8 +42,12 @@ genesis:
       params:
         bond_denom: ustoc
 validators:
-- name: dev2
-  bonded: 80000000ustoc
+- name: validator1
+  bonded: 450000000000ustoc
   app:
-    minimum-gas-prices: 0.0001ustoc
+    minimum-gas-prices: 0.001ustoc
+- name: validator2
+  bonded: 450000000000ustoc
+  app:
+    minimum-gas-prices: 0.001ustoc
 
