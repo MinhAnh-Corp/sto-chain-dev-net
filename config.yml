@@ -8,14 +8,14 @@ accounts:
 - name: admin
   coins:
   - 9000000000000000ustoc
-- name: dev1
+- name: validator1
   coins:
   - 500000000000000ustoc
-- name: dev2
+- name: validator2
   coins:
   - 490000000000000ustoc
 faucet:
-  name: dev1
+  name: validator1
   coins: []
   openapi:
     path: docs/static/openapi.yml
@@ -28,9 +28,9 @@ genesis:
       params:
         bond_denom: ustoc
 validators:
-- name: dev1
+- name: validator1
   bonded: 10000000000ustoc
-- name: dev2
+- name: validator2
   bonded: 10000000000ustoc
   app:
     minimum-gas-prices: 0.0001ustoc
